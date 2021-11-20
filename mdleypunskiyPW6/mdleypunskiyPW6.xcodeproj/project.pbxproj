@@ -12,7 +12,33 @@
 		B5112B552749627C00C703E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5112B542749627C00C703E6 /* ViewController.swift */; };
 		B5112B5A2749627D00C703E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5112B592749627D00C703E6 /* Assets.xcassets */; };
 		B5112B5D2749627D00C703E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5112B5B2749627D00C703E6 /* LaunchScreen.storyboard */; };
+		B5112B82274965CB00C703E6 /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5112B802749658600C703E6 /* MyLogger1.framework */; };
+		B5112B83274965CB00C703E6 /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5112B802749658600C703E6 /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5112B7F2749658600C703E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5112B7B2749658600C703E6 /* MyLogger1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5112B6E274964BC00C703E6;
+			remoteInfo = MyLogger1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5112B84274965CB00C703E6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B5112B83274965CB00C703E6 /* MyLogger1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B5112B4D2749627C00C703E6 /* mdleypunskiyPW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mdleypunskiyPW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +48,7 @@
 		B5112B592749627D00C703E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5112B5C2749627D00C703E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5112B5E2749627D00C703E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5112B7B2749658600C703E6 /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5112B82274965CB00C703E6 /* MyLogger1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +66,10 @@
 		B5112B442749627C00C703E6 = {
 			isa = PBXGroup;
 			children = (
+				B5112B7B2749658600C703E6 /* MyLogger1.xcodeproj */,
 				B5112B4F2749627C00C703E6 /* mdleypunskiyPW6 */,
 				B5112B4E2749627C00C703E6 /* Products */,
+				B5112B81274965CB00C703E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +94,21 @@
 			path = mdleypunskiyPW6;
 			sourceTree = "<group>";
 		};
+		B5112B7C2749658600C703E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5112B802749658600C703E6 /* MyLogger1.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5112B81274965CB00C703E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +119,7 @@
 				B5112B492749627C00C703E6 /* Sources */,
 				B5112B4A2749627C00C703E6 /* Frameworks */,
 				B5112B4B2749627C00C703E6 /* Resources */,
+				B5112B84274965CB00C703E6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -109,12 +155,28 @@
 			mainGroup = B5112B442749627C00C703E6;
 			productRefGroup = B5112B4E2749627C00C703E6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B5112B7C2749658600C703E6 /* Products */;
+					ProjectRef = B5112B7B2749658600C703E6 /* MyLogger1.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B5112B4C2749627C00C703E6 /* mdleypunskiyPW6 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B5112B802749658600C703E6 /* MyLogger1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyLogger1.framework;
+			remoteRef = B5112B7F2749658600C703E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B5112B4B2749627C00C703E6 /* Resources */ = {

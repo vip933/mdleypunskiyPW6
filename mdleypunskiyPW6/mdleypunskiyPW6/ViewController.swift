@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MyLogger1
 
 class ViewController: UIViewController {
 
@@ -32,14 +33,18 @@ class ViewController: UIViewController {
             ).isActive = true
             button.heightAnchor.constraint(equalToConstant: 30).isActive = true
             self.buttons.append(button)
-            button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
             top += 40
         }
+        buttons[0].addTarget(self, action: #selector(logFromFramework), for: .touchUpInside)
     }
     
     @objc
     private func buttonPressed(sender: UIButton) {
         print(sender.titleLabel?.text ?? "Error")
+    }
+    
+    @objc func logFromFramework(_ sender: Any) {
+        MyLogger1.log("Hello, World!")
     }
 
 
