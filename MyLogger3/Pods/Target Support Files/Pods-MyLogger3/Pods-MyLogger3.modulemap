@@ -1,0 +1,6 @@
+framework module Pods_MyLogger3 {
+  umbrella header "Pods-MyLogger3-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MyLogger3' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MyLogger3
+
+end
+
+target 'Pods-MyLogger3_Tests' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Pods-MyLogger3_Tests
+
+end

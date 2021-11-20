@@ -15,6 +15,7 @@
 		B5112B82274965CB00C703E6 /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5112B802749658600C703E6 /* MyLogger1.framework */; };
 		B5112B83274965CB00C703E6 /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5112B802749658600C703E6 /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5112B8D2749732E00C703E6 /* MyLogger2 in Frameworks */ = {isa = PBXBuildFile; productRef = B5112B8C2749732E00C703E6 /* MyLogger2 */; };
+		EDFB67BB0D40AE117C7393EB /* Pods_mdleypunskiyPW6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1778C412C56AF12589093FE /* Pods_mdleypunskiyPW6.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7EA87280941122755015A09E /* Pods-mdleypunskiyPW6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mdleypunskiyPW6.debug.xcconfig"; path = "Target Support Files/Pods-mdleypunskiyPW6/Pods-mdleypunskiyPW6.debug.xcconfig"; sourceTree = "<group>"; };
+		8CC25C5A1FF720F8B3CAA91E /* Pods-mdleypunskiyPW6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mdleypunskiyPW6.release.xcconfig"; path = "Target Support Files/Pods-mdleypunskiyPW6/Pods-mdleypunskiyPW6.release.xcconfig"; sourceTree = "<group>"; };
 		B5112B4D2749627C00C703E6 /* mdleypunskiyPW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mdleypunskiyPW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5112B502749627C00C703E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5112B522749627C00C703E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		B5112B5E2749627D00C703E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5112B7B2749658600C703E6 /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
 		B5112B8B2749730700C703E6 /* MyLogger2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLogger2; path = ../MyLogger2; sourceTree = "<group>"; };
+		D1778C412C56AF12589093FE /* Pods_mdleypunskiyPW6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mdleypunskiyPW6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			files = (
 				B5112B82274965CB00C703E6 /* MyLogger1.framework in Frameworks */,
 				B5112B8D2749732E00C703E6 /* MyLogger2 in Frameworks */,
+				EDFB67BB0D40AE117C7393EB /* Pods_mdleypunskiyPW6.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,7 @@
 				B5112B4F2749627C00C703E6 /* mdleypunskiyPW6 */,
 				B5112B4E2749627C00C703E6 /* Products */,
 				B5112B81274965CB00C703E6 /* Frameworks */,
+				DA5DADAEC0C9EBEC4E9772D1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,8 +115,19 @@
 		B5112B81274965CB00C703E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1778C412C56AF12589093FE /* Pods_mdleypunskiyPW6.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA5DADAEC0C9EBEC4E9772D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EA87280941122755015A09E /* Pods-mdleypunskiyPW6.debug.xcconfig */,
+				8CC25C5A1FF720F8B3CAA91E /* Pods-mdleypunskiyPW6.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,10 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5112B612749627D00C703E6 /* Build configuration list for PBXNativeTarget "mdleypunskiyPW6" */;
 			buildPhases = (
+				F258EF3B5BA87602703F21E9 /* [CP] Check Pods Manifest.lock */,
 				B5112B492749627C00C703E6 /* Sources */,
 				B5112B4A2749627C00C703E6 /* Frameworks */,
 				B5112B4B2749627C00C703E6 /* Resources */,
 				B5112B84274965CB00C703E6 /* Embed Frameworks */,
+				2182B444826DC2AD56978A83 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +215,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2182B444826DC2AD56978A83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mdleypunskiyPW6/Pods-mdleypunskiyPW6-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mdleypunskiyPW6/Pods-mdleypunskiyPW6-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mdleypunskiyPW6/Pods-mdleypunskiyPW6-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F258EF3B5BA87602703F21E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mdleypunskiyPW6-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5112B492749627C00C703E6 /* Sources */ = {
@@ -340,6 +401,7 @@
 		};
 		B5112B622749627D00C703E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EA87280941122755015A09E /* Pods-mdleypunskiyPW6.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -359,6 +421,7 @@
 		};
 		B5112B632749627D00C703E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC25C5A1FF720F8B3CAA91E /* Pods-mdleypunskiyPW6.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

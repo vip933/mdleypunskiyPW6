@@ -8,6 +8,7 @@
 import UIKit
 import MyLogger1
 import MyLogger2
+import MyLogger3
 
 class ViewController: UIViewController {
 
@@ -38,6 +39,7 @@ class ViewController: UIViewController {
         }
         buttons[0].addTarget(self, action: #selector(logFromFramework), for: .touchUpInside)
         buttons[1].addTarget(self, action: #selector(logFromSwiftPackage), for: .touchUpInside)
+        buttons[2].addTarget(self, action: #selector(logFromPod), for: .touchUpInside)
     }
     
     @objc
@@ -45,14 +47,19 @@ class ViewController: UIViewController {
         print(sender.titleLabel?.text ?? "Error")
     }
     
-    @objc func logFromFramework(_ sender: Any) {
+    @objc
+    func logFromFramework(_ sender: Any) {
         MyLogger1.log("Hello, World!")
     }
     
-    @objc func logFromSwiftPackage(_ sender: Any) {
+    @objc
+    func logFromSwiftPackage(_ sender: Any) {
         MyLogger2.log("Hello, World!")
     }
-
-
+    
+    @objc
+    func logFromPod(_ sender: Any) {
+        MyLogger3.log("Hello, World!")
+    }
 }
 

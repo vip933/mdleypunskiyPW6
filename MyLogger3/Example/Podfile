@@ -1,0 +1,15 @@
+use_frameworks!
+target 'MyLogger3_Tests' do
+  pod 'MyLogger3', :path => '../'
+  
+  
+end
+
+# Uncomment the next line to define a global platform for your project
+  platform :ios, '9.0'
+  target 'ios-hw-tutorial-libraries' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
+    # Pods for ios-hw-tutorial-libraries
+    pod 'MyLogger3', :path => '../MyLogger3/'
+  end
