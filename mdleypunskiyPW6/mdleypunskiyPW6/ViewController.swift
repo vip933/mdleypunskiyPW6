@@ -7,6 +7,7 @@
 
 import UIKit
 import MyLogger1
+import MyLogger2
 
 class ViewController: UIViewController {
 
@@ -36,6 +37,7 @@ class ViewController: UIViewController {
             top += 40
         }
         buttons[0].addTarget(self, action: #selector(logFromFramework), for: .touchUpInside)
+        buttons[1].addTarget(self, action: #selector(logFromSwiftPackage), for: .touchUpInside)
     }
     
     @objc
@@ -45,6 +47,10 @@ class ViewController: UIViewController {
     
     @objc func logFromFramework(_ sender: Any) {
         MyLogger1.log("Hello, World!")
+    }
+    
+    @objc func logFromSwiftPackage(_ sender: Any) {
+        MyLogger2.log("Hello, World!")
     }
 
 
